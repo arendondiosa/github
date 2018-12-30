@@ -14,7 +14,7 @@ repositories = []
 organizations = []
 
 # Check if Data folder exist
-if not os.path.exists('data'):
+if not os.path.exists('./src/data'):
     os.makedirs('data')
 
 def writeFile(filename, data):
@@ -48,11 +48,11 @@ def getOrganizations():
 
 def main():
     user = getUser()
-    writeFile('./data/user.json', user)
+    writeFile('./src/data/user.json', user)
     repositories = getRepositories()
-    writeFile('./data/repositories.json', repositories)
+    writeFile('./src/data/repositories.json', repositories)
     organizations = getOrganizations()
-    writeFile('./data/organizations.json', organizations)
+    writeFile('./src/data/organizations.json', organizations)
 
     print(user)
 

@@ -28,5 +28,5 @@ config.ini
 # Python
 env/
 
-*.lock
+yarn.lock
 .vscode/
